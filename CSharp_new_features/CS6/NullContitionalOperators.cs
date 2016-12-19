@@ -7,6 +7,18 @@ namespace CSharp_new_features
 {
     class NullContitionalOperators
     {
+        void smaple()
+        {
+            var students = new List<Student>();
+
+            int? length = students?.Count;        // null if customers is null
+            Student first = students?[0];         // null if customers is null
+
+            int count = students?.Count ?? 0;    // 0 if customers is null
+
+            int? courseCount = students?[0].Courses?.Count;
+        }
+
         public static void NullPropgationFeature(Student student)
         {
             // Previously in C# 5

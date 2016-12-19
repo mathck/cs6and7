@@ -18,6 +18,14 @@ namespace CSharp_new_features
                 // In previous version of C#, you have to check it inside
                 // and then re throw which would result in losing exception data
             }
+            catch (System.IO.FileNotFoundException exception) when (exception.FileName == "def.txt")
+            {
+                // ...
+            }
+            catch (System.IO.FileNotFoundException exception) when (exception.FileName == "ghi.txt")
+            {
+                // ...
+            }
         }
     }
 }

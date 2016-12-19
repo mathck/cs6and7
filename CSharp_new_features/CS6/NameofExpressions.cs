@@ -7,6 +7,14 @@ namespace CSharp_new_features
 {
     class NameofExpressions
     {
-        
+        void sample()
+        {
+            Student x = new Student();
+
+            // ...
+
+            if (x == null)
+                throw new ArgumentNullException(nameof(x));
+        }
     }
 }

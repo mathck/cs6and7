@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using static System.Console;
 
-namespace CSharp_new_features
+namespace CSharp_new_features.CS7
 {
     class ExpressionBody
     {
