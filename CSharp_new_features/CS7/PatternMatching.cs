@@ -19,7 +19,7 @@ namespace CSharp_new_features.CS7
             // Example 2
             var x = 10;
             dynamic y = 0b1001;
-            var sum = y is int? $"{y * x}" : "Invalid data";
+            var sum = y is int ? $"{y * x}" : "Invalid data";
         }
 
         class Shape
