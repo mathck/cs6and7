@@ -14,7 +14,7 @@ namespace CSharp_new_features.CS7
 
         ExpressionBody() => ProductName = "Fancy quick constructor";
 
-        ~ExpressionBody() => WriteLine("Fancy quick deconstructor");
+        ~ExpressionBody() => WriteLine("Fancy quick deconstructor"); // also new: Deconstruction!!
 
         decimal PriceExtended
         {
