@@ -53,7 +53,6 @@
     <Compile Include="CS6\ExceptionFilters.cs" />
     <Compile Include="CS6\StringInterpolation.cs" />
     <Compile Include="CS6\NameofExpressions.cs" />
-    <Compile Include="CS6\IndexInitualizer.cs" />
     <Compile Include="CS6\UsingStatic.cs" />
     <Compile Include="CS6\NullContitionalOperators.cs" />
     <Compile Include="CS6\ExpressionBody.cs" />
@@ -64,6 +63,7 @@
     <Compile Include="CS7\PatternMatching.cs" />
     <Compile Include="CS7\OutVariables.cs" />
     <Compile Include="CS7\Tuples.cs" />
+    <Compile Include="Tester.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

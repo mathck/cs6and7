@@ -2,7 +2,7 @@
 
 namespace CSharp_new_features
 {
-    class AutoProperty
+    public class AutoProperty
     {
         public class Customer
         {
@@ -12,7 +12,8 @@ namespace CSharp_new_features
 
         public class Customer2
         {
-            public string Name { get; }
+            public string Name { get; } = "HelloWrold";
+
             public Customer2(string first, string last)
             {
                 Name = first + " " + last;

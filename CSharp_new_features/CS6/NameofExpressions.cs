@@ -5,16 +5,15 @@ using static System.Console;
 
 namespace CSharp_new_features
 {
-    class NameofExpressions
+    public class NameofExpressions
     {
-        void sample()
+        public static string sample()
         {
-            Student x = new Student();
+            Student myStudent = new Student();
 
             // ...
 
-            if (x == null)
-                throw new ArgumentNullException(nameof(x));
+            return nameof(myStudent);
         }
     }
 }

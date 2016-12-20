@@ -40,33 +40,6 @@ namespace CSharp_new_features
 
             int? courseCount = students?[0].Courses?.Count;
         }
-
-        public static void NullPropgationFeature(Student student)
-        {
-            // Previously in C# 5
-            if (student != null)
-            {
-                WriteLine(student.Name);
-                if (student.Courses != null)
-                {
-                    foreach (var course in student.Courses)
-                    {
-                        WriteLine(course.Id);
-                    }
-                }
-            }
-
-            //In C# 6
-            WriteLine(student?.Name);
-            if (student.Courses != null)
-            {
-                foreach (var course in student.Courses)
-                {
-                    WriteLine(course.Id);
-                }
-            }
-
-        }
     }
 
     public class Student

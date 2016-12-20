@@ -3,7 +3,7 @@ using System;
 
 namespace CSharp_new_features
 {
-    class LocalFunctions
+    public class LocalFunctions
     {
         void level1()
         {
@@ -24,7 +24,7 @@ namespace CSharp_new_features
         }
 
         /// 1, 1, 2, 3, 5, 8, 13, ...
-        public int Fibonacci(int x)
+        public static int Fibonacci(int x)
         {
             if (x < 0) throw new ArgumentException("Less negativity please!", nameof(x));
                 return Fib(x).current;
